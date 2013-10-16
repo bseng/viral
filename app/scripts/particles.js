@@ -52,7 +52,7 @@ window.addEventListener("load", function () {
 
     // 파티클 데이터를 생성합니다.
     particles = [];
-    for (var i = 0; i < 150; i++) {
+    for (var i = 0; i < 100; i++) {
         particles.push(new Particle());
     }
 
@@ -67,9 +67,13 @@ window.addEventListener("load", function () {
     }).attr("cy", function (data, index) {
         return data.y;
     }).attr("stroke", function (data, index) {
-        return d3.rgb(color(index % 20)).brighter(0.5);
+        return d3.rgb(color(index % 20)).brighter(0.7);
     }).attr("stroke-width", function (data, index) {
-        return data.radius / 2;
+        return data.radius / ((Math.random() * 2) + 1);
+    }).attr("stroke", function (data, index) {
+        return d3.rgb(color((index-1) % 20)).brighter(0.2);
+    }).attr("stroke-width", function (data, index) {
+        return data.radius / ((Math.random() * 3) + 2);
     });
 
     // 타이머를 생성합니다.

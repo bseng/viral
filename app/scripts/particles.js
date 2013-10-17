@@ -49,6 +49,8 @@ window.addEventListener("load", function () {
 
     // 캔버스를 생성합니다.
     canvas = d3.select("svg");
+    canvas.style('width', width);
+    canvas.style('height', height);
 
     // 파티클 데이터를 생성합니다.
     particles = [];
@@ -56,6 +58,7 @@ window.addEventListener("load", function () {
         particles.push(new Particle());
     }
 
+    
     // 파티클을 생성합니다.
     var enter = canvas.selectAll().data(particles).enter();
     enter.append("svg:circle").attr("fill", function (data, index) {
@@ -71,13 +74,17 @@ window.addEventListener("load", function () {
     }).attr("stroke-width", function (data, index) {
         return data.radius / ((Math.random() * 2) + 1);
     }).attr("stroke", function (data, index) {
-        return d3.rgb(color((index-1) % 20)).brighter(0.2);
+        return d3.rgb(color((index-(Math.random() * 20)) % 20)).brighter(0.2);
     }).attr("stroke-width", function (data, index) {
         return data.radius / ((Math.random() * 3) + 2);
     });
 
+    //enter.append("svg:image").attr('x',10).attr('y',10).attr('width',200).attr('height',300).attr('xlink:href','/images/viral_logo_vertical.PNG').attr('opacity',0.01);
+    //enter.append("svg:image").attr('x',400).attr('y',500).attr('width',300).attr('height',500).attr('xlink:href','/images/viral_logo_vertical.PNG');
+    canvas.append("svg:image").attr('x',(window.innerWidth / 12)*5).attr('y',(window.innerHeight / 12)*3).attr('width',(window.innerWidth/12)*2).attr('height',(window.innerWidth/12)*2/231*401).attr('xlink:href','/images/viral_logo_vertical.PNG').attr('opacity','0.8').attr('data-300','display:none');
     // 타이머를 생성합니다.
     var particleTags = d3.selectAll("circle");
+    var particalImage = d3.selectAll("image");
     setInterval(function () {
         // 화면에 반영합니다.
         particleTags.attr("cx", function (data, index) {

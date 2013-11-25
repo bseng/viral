@@ -10,9 +10,18 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!-- build:css -->
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.css" />
+<link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.date.css" />
+<link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.time.css" />
+<!-- endbower -->
+<!-- endbuild -->
 <!-- build:css(.tmp) styles/main.css -->
 <link rel="stylesheet" href="styles/main.css">
 <!-- endbuild -->
+
 </head>
 <body>
 <!--[if lt IE 10]>
@@ -48,13 +57,38 @@
   </div>
   <div class='centered' id="slide4" data-0="display:none" data-7000="display:block">
 
-  Contact us
+  <h3>Make a booking</h3>
+  <div id="contact-form" class="col-md-6">    
+     
+    <form id="contact" method="post" action="">
+        <label class="col-md-3" for="name">Name</label>
+        <input type="text" name="name"><br>
+        <label class="col-md-3" for="email">E-mail</label>
+        <input type="email" name="email"><br>
+        <label class="col-md-3" for="phone">Phone</label>
+        <input type="tel" name="phone"><br>
+        <label class="col-md-3" for="date">date</label>
+        <input id="date" type="text" name="date"><br>
+        <label class="col-md-3" for="time">time</label>
+        <input id="time" type="text" name="time"><br>
+        <label class="col-md-3" for="message">Question/Comment</label>
+        <textarea name="message"></textarea><br>
+         
+        <input type="submit" name="submit" id="submit" value="Send Message" />
+         
+    </form>
+     
+  </div><!-- /end #contact-form -->
   </div>
 
 </div>
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/pickadate/lib/picker.js"></script>
+<script src="bower_components/pickadate/lib/picker.date.js"></script>
+<script src="bower_components/pickadate/lib/picker.time.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -76,6 +110,7 @@ ga('create','UA-XXXXX-X');ga('send','pageview');
 <script src="scripts/particles.js"></script>
 <!-- endbuild -->
 <script src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
-<script> var s = skrollr.init({ }); </script>
+<script> var s = skrollr.init({ }); 
+</script>
 </body>
 </html>

@@ -2,7 +2,8 @@
   "name": "viral",
   "version": "0.0.0",
   "dependencies": {
-    "jquery": "~1.10.2"
+    "jquery": "~2.0.3",
+    "bootstrap": "~3.0.2"
   },
   "devDependencies": {}
 }

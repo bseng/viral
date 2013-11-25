@@ -1,1 +1,2 @@
-console.log('\'Allo \'Allo!');
+$("#date").pickadate();
+$("#time").pickatime();

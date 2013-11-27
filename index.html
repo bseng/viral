@@ -10,7 +10,9 @@
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-<link rel="stylesheet" href="styles/4657ae7e.main.css">
+
+<link rel="stylesheet" href="styles/9aa11b2e.main.css">
+
 </head>
 <body>
 <!--[if lt IE 10]>
@@ -46,11 +48,32 @@
   </div>
   <div class="centered" id="slide4" data-0="display:none" data-7000="display:block">
 
-  Contact us
+  <h3>Make a booking</h3>
+  <div id="contact-form" class="col-md-6">    
+     
+    <form id="contact" method="post" action="">
+        <label class="col-md-3" for="name">Name</label>
+        <input type="text" name="name"><br>
+        <label class="col-md-3" for="email">E-mail</label>
+        <input type="email" name="email"><br>
+        <label class="col-md-3" for="phone">Phone</label>
+        <input type="tel" name="phone"><br>
+        <label class="col-md-3" for="date">date</label>
+        <input id="date" type="text" name="date"><br>
+        <label class="col-md-3" for="time">time</label>
+        <input id="time" type="text" name="time"><br>
+        <label class="col-md-3" for="message">Question/Comment</label>
+        <textarea name="message"></textarea><br>
+         
+        <input type="submit" name="submit" id="submit" value="Send Message">
+         
+    </form>
+     
+  </div><!-- /end #contact-form -->
   </div>
 
 </div>
-<script src="scripts/1137e1f5.vendor.js"></script>
+<script src="scripts/7cc7eaf7.vendor.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
 <script>
@@ -62,10 +85,11 @@ r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
 ga('create','UA-XXXXX-X');ga('send','pageview');
 </script>
 -->
-<script src="scripts/b6c3df09.main.js"></script>
+<script src="scripts/b91effd1.main.js"></script>
 <script src="http://d3js.org/d3.v2.js"></script>
 <script src="scripts/56b1f350.particles.js"></script>
 <script src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
-<script> var s = skrollr.init({ }); </script>
+<script> var s = skrollr.init({ }); 
+</script>
 </body>
 </html>

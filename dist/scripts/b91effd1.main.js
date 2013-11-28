@@ -1,1 +1,0 @@
-$("#date").pickadate(),$("#time").pickatime();

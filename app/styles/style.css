@@ -4,7 +4,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	font-size: 1em;
-	color: #8a8683;
+	color: rgb(18,68,50);
 	background-color:#ffffff;
 }
 img {
@@ -24,6 +24,32 @@ a:visited {
 }
 
 
+
+
+.btn {
+  margin:20px 0;
+  padding: 15px 30px;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #df6c3f;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+}
+.btn:link {
+  color: #FFFFFF;
+}
+.btn:hover {
+  background-color: #f68f67;
+  color: #ffffff;
+}
+.btn:accesstive {
+  background-color: #bde2df;
+  color: #ffffff;
+}
+.btn:visited {
+  contentolor: #ffffff;
+}
 
 
 
@@ -89,12 +115,12 @@ a:visited {
 	font-size: 3.8em;
 	letter-spacing: -3px;
 	line-height: 0px;
-	color:#8a8683;
+	color:rgb(18,68,50);
 	font-weight: 700;
 }
 #slide1 h2 {
 	font-size: 2em;
-	color: #8a8683;
+	color: rgb(18,68,50);
 	line-height: 0px;
 	padding-bottom:20px;
 	font-weight: 400;
@@ -106,7 +132,8 @@ a:visited {
 /* Slide 2 */ 
 
 #slide2{
-	background-image:url('../images/viral-door.png');
+	background-image:url('../images/viral-door-b.png');
+  background-size: cover;
 	background-color:#f68f67;
 	color:#ffffff;
 }
@@ -124,6 +151,15 @@ a:visited {
 	padding-bottom:20px;
 	font-weight: 400;
 }
+#slide2 p {
+	font-size: 2.4em;
+	color: #ffffff;
+  text-shadow: 0px 2px rgb(18,68,50);
+	line-height: 2em;
+	padding-bottom:20px;
+	font-weight: 700;
+}
+
 
 
 
@@ -137,12 +173,12 @@ a:visited {
 	font-size: 3.8em;
 	letter-spacing: -3px;
 	line-height: 0px;
-	color:#8a8683;
+	color:rgb(18,68,50);
 	font-weight: 700;
 }
 #slide3 h2 {
 	font-size: 2em;
-	color: #8a8683;
+	color: rgb(18,68,50);
 	line-height: 0px;
 	padding-bottom:20px;
 	font-weight: 400;
@@ -161,30 +197,31 @@ a:visited {
 /* Slide 4 */
 
 #slide4{
-	background-image:url('../images/viral-address.png');
-	background-color:#8a8683;
+	background-image:url('../images/viral-address-a.png');
+  background-size: cover;
+	background-color:rgb(18,68,50);
 	color:#ffffff;
 }
 #slide4 h1 {
 	font-size: 3.8em;
 	letter-spacing: -3px;
-  text-shadow: 2px 3px #444444;
+  text-shadow: 1px 2px #FFFFFF;
 	line-height: 0px;
-	color: #8a8683;
+	color: rgb(18,68,50);
 	font-weight: 700;
 }
 #slide4 h2 {
 	font-size: 2em;
-	color: #8a8683;
-  text-shadow: 2px 3px #222222;
+	color: rgb(18,68,50);
+  text-shadow: 1px 2px #FFFFFF;
 	line-height: 0px;
 	padding-bottom:20px;
 	font-weight: 400;
 }
 #slide4 h3 {
 	font-size: 1.8em;
-	color: rgb(18,68,50);
-  text-shadow: 2px 3px #FFFFFF;
+	color: #c9502a;
+  text-shadow: 1px 2px #FFFFFF;
 	line-height: 0px;
 	padding-bottom:20px;
 	font-weight: 300;
@@ -192,13 +229,24 @@ a:visited {
 #slide4 h4 {
 	font-size: 1.4em;
 	color: rgb(18,68,50);
-  text-shadow: 2px 3px #FFFFFF;
+  text-shadow: 1px 2px #FFFFFF;
 	line-height: 0px;
 	padding-bottom:20px;
 	font-weight: 200;
 }
-
-
+#slide4 p {
+	font-size: 1.4em;
+	color: rgb(18,68,50);
+  text-shadow: 1px 2px #FFFFFF;
+	padding-bottom:20px;
+	font-weight: 200;
+}
+#slide4 label {
+	font-size: 1.4em;
+	color: rgb(18,68,50);
+  text-shadow: 1px 2px #FFFFFF;
+	font-weight: 200;
+}
 
 /* Tablet */
 @media screen and (max-width: 1024px) {

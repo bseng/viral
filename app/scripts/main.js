@@ -1,4 +1,6 @@
-$("#date").pickadate();
+$("#date").pickadate({
+  container: "#body"
+});
 $("#time").pickatime({
   disable: [
     true,
@@ -18,6 +20,7 @@ $("#time").pickatime({
     [22,0],
     [22,30],
     [23,0]
-  ]
+  ],
+  container: "#body"
 });
 

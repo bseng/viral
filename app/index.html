@@ -1,21 +1,19 @@
-<!DOCTYPE HTML>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
-<title>Viral Fusion</title>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
-<!-- build:css styles/normalize.css -->
-<link rel="stylesheet" href="styles/normalize.css" type="text/css" media="screen">
-<!-- endbuild -->
-<!-- build:css(.tmp) styles/grid.css -->
-<link rel="stylesheet" href="styles/grid.css" type="text/css" media="screen">
-<!-- endbuild -->
-<!-- build:css styles/style.css -->
-<link rel="stylesheet" href="styles/style.css" type="text/css" media="screen">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>viral</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<!-- build:css styles/bootstrap.css -->
+<!-- bower:css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+<!-- endbower -->
 <!-- endbuild -->
 <!-- build:css styles/default.css -->
 <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.css" />
@@ -26,148 +24,137 @@
 <!-- build:css styles/default.time.css -->
 <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.time.css" />
 <!-- endbuild -->
+<!-- build:css(.tmp) styles/fixed-positioning.css -->
+<link ref="stylesheet" href="styles/fixed-positioning.css" />
+<!-- endbuild -->
 
-<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
-<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!-- build:css(.tmp) styles/main.css -->
+<link rel="stylesheet" href="styles/main.css" />
+<!-- endbuild -->
 </head>
-
-<body id="body">
-
-<div class="menu">
-  <div class="container clearfix">
-
-    <div id="logo" class="grid_3">
-      <img src="images/viral-logo-small.png">
-    </div>
-
-    <div id="nav" class="grid_9 omega">
-      <ul class="navigation">
-        <li data-slide="1"></li>
-        <li data-slide="2">Viral</li>
-        <li data-slide="3">Fusion</li>
-        <li data-slide="4">Find Us</li>
-      </ul>
-    </div>
-
-  </div>
+<body >
+<!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+<div id='body'>
 </div>
-
-
-<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
-  <svg class="centered" id="logo"> 
+<div data-600="opacity:1;top:0%" data-1000="opacity:0;top:-100%;">
+  <svg id="canvas"> 
   </svg>
 </div>
-
-
-
-<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-  <div class="container clearfix">
-    <div id="content" class="grid_12">
-      <p>Tucked in a secret sanctuary in the heart of Central, Viral Fusion offers divine "East Meets West" cross-over cuisine that propels fusion dining to a new height. Taste our creation and bask in our ambience.</p>
-      </p>
-    </div>
-
+<div style="background: #6B0000; color: #FFF;float:left; width: 100%;height:100%"
+  data-600="opacity:0" data-1000="opacity:1" data-2300="left:0%" data-3000="left:100%">
+  <img src="images/viral-door-r.jpg" class="img-responsive">
+  <h3 style="padding-top:20%;padding-left:10%;text-shadow: 1px 1px rgba(255,255,255,0.5);font-size:2.5em">Tucked in a secret sanctuary in the heart of Central, Viral Fusion offers divine "East Meets West" cross-over cuisine that propels fusion dining to a new height. Taste our creation and bask in our ambience.
   </div>
 </div>
-
-
-
-<div class="slide" id="slide3"  data-slide="3" data-stellar-background-ratio="0.5">
-  <div class="container clearfix" style="position:relative;z-index:90">
-    <div id="main" class="grid_12">
-      <h1> </h1>
-      <div class="grid_4">
-        <p>
-        <img src="images/pandan pretty.jpg" >
-        </p>
-        <p>
-        <img src="images/kaido benedict.jpg">
-        </p>
-        <p>
-        <img src="images/Lamb Lullaby.jpg">
-        </p>
-      </div>
-      <div class="grid_4">
-        <p>
-        <img src="images/Smoked Caesar.jpg" >
-        </p>
-        <p>
-        <img src="images/Doenjang Roast.jpg" >
-        </p>
-      </div>
-      <div class="grid_3">
-        <p>
-        <img src="images/food-vegan charm.jpg" >
-        </p>
-        <p>
-        <img src="images/squab supremo.jpg" >
-        </p>
-        <p>
-        <img src="images/Selangor Slivers.jpg" >
-        </p>
-      </div>
+<!--
+  <div class='centered' style="overflow: hidden;" id="slide1" data-0="display:none;background:white" data-600="display:block;top:100%" data-1000="top:0%" style="width:100%">
+    <div style="width: 45%;background: #D9531F; color: #FFF;height:100%;display:block;float:left; position:relative" data-2300="left:0%" data-3000="left:100%">
+      <h1 style="padding-top:23%;padding-left:10%;font-size:5em">viral fusion</h1>
+    </div>
+    <div style="width: 55%;background: #FFF; color: #D9531F;height:100%;display:block;float:left; position:relative" data-2300="left:0%" data-3000="left:-100%">
+      <h2 style="padding-top:55%;padding-left:10%;font-size:2.5em">first paragraph of what you want to say about viral fusion. Better to be 3 sentences long. Or else it will get too long.</h2>
     </div>
   </div>
+-->
+<!--
+     <div style="height: 45%;background: rgb(18,68,50); color: #FFF;width:100%;display:none;float:left; position:relative; text-align: right" data-2300="display:block;left:-100%" data-3000="left:0%" data-4300="top:-100%" data-5000="top:0%" >
+      <h1 style="padding-top:12%;padding-right:2%;font-size:5em">philosophy</h1>
+    </div>
+    <div style="height: 55%;background: #FFF; color: rgb(18,68,50);width:100%;display:none;float:left; position:relative" data-2300="display:block;left:-100%" data-3000="left:0%" data-4300="top:-100%" data-5000="top:0%" >
+      <h2 style="padding-right: 20%;font-size:2.5em">second paragraph of what you want to say about viral fusion. Better to be 3 sentences long. Or else it will get too long.</h2>
+    </div>
+-->
+<div style="width:100%;height:100%; background:#f5d6d2;color:#FFF;" >
+    <img src="images/kaido benedict.jpg" class="img-responsive">
+    <div class="" style="width:100%;height:100%;color: #00421A"><h2>Kaido Benedict</h2></div>
+    <img src="images/Lamb Lullaby.jpg" class="img-responsive">
+    <div class="" style="width:100%;height:100%;color: #00421A"><h2>lamb Lullaby</h2></div>
+    <img src="images/pandan pretty.jpg" class="img-responsive">
+    <div class="" style="width:100%;height:100%;color: #00421A"><h2>pandan pretty</h2></div>
+    <img src="images/Selangor Slivers.jpg" class="img-responsive">
+    <div class="" style="width:100%;height:100%;color: #00421A"><h2>Selangor Slivers</h2></div>
+    <img src="images/Smoked Caesar.jpg" class="img-responsive">
+    <div class="" style="color: #00421A"><h2>Smoked Caesar</h2></div>
+    <img src="images/squab supremo.jpg" class="img-responsive">
+    <div class="" style="color: #00421A"><h2>squab supremo</h2></div>
 </div>
-
-
-
-<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-  <div class="container clearfix">
-
-    <div id="content" class="grid_12">
-      <h1>Find Us</h1>
-      <img src="images/viral-address-r.png">
-      <h2>Make a Booking or Find us at our address</h2>
-      <div id="contact-form" class="grid_6">    
-        <form id="contact" method="post" action="">
-          <label class="grid_6" for="name">Name</label>
-          <input class="grid_6" type="text" name="name"><br>
-          <label class="grid_6" for="email">E-mail</label>
-          <input class="grid_6" type="email" name="email"><br>
-          <label class="grid_6" for="phone">Phone</label>
-          <input class="grid_6" type="tel" name="phone"><br>
-          <label class="grid_6" for="date">date</label>
-          <input class="grid_6" id="date" type="text" name="date"><br>
-          <label class="grid_6" for="time">time</label>
-          <input class="grid_6" id="time" type="text" name="time"><br>
-          <label class="grid_6" for="message">Question/Comment</label>
-          <textarea class="grid_6" name="message"></textarea><br>
-          <a class="grid_5 btn" type="submit" name="submit" id="submit">Send Message</a>
-        </form>
-      </div>
-      <div id="time_open" class="grid_6 omega">
+<div id="slide3" style="width:100%;height:100%;background: #6B0000; color: #FFF;float:left; ">
+  <img src="images/viral-address-r.png" class="img-responsive">
+      <div id="time_open" class="">
         <h3>Opening Hours</h3>
         <h4>Lunch 12:00 - 3:00p</h4>
         <h4>Dinner 6:30p - 11:00p</h4>
         <h3>Address</h3>
         <p>13/F, Pearl Oriental House, 60 Stanley Street, Central, Hong Kong</p>
       </div>
-    </div>
 
-  </div>
 </div>
+<div id="slide4" style="width:100%;height:100%">
+  <h3>Make a booking</h3>
+  <div id="contact-form" class="col-md-6">    
 
+    <form id="contact" method="post" class="form-horizontal" action="">
+      <div class="form-group">
+      <label class="col-md-3" for="name">Name</label>
+      <input type="text" name="name"><br>
+    </div>
+      <div class="form-group">
+      <label class="col-md-3" for="email">E-mail</label>
+      <input type="email" name="email"><br>
+    </div>
+      <div class="form-group">
+      <label class="col-md-3" for="phone">Phone</label>
+      <input type="tel" name="phone"><br>
+    </div>
+      <div class="form-group">
+      <label class="col-md-3" for="date">date</label>
+      <input id="date" type="text" name="date"><br>
+    </div>
+      <div class="form-group">
+      <label class="col-md-3" for="time">time</label>
+      <input id="time" type="text" name="time"><br>
+    </div>
+      <div class="form-group">
+      <label class="col-md-3" for="message">Question/Comment</label>
+      <textarea name="message"></textarea><br>
+
+    </div>
+      <input type="submit" name="submit" id="submit" value="Send Message" />
+
+    </form>
+
+  </div><!-- /end #contact-form -->
+
+</div>
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/pickadate/lib/picker.js"></script>
 <script src="bower_components/pickadate/lib/picker.date.js"></script>
 <script src="bower_components/pickadate/lib/picker.time.js"></script>
 <!-- endbower -->
-<script type="text/javascript" src="scripts/jquery.stellar.min.js"></script>
-<script type="text/javascript" src="scripts/waypoints.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
-
-
-<script type="text/javascript" src="scripts/scripts.js"></script>
-<script type="text/javascript" src="scripts/main.js"></script>
 <!-- endbuild -->
 
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+<script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                                                        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+e.src='//www.google-analytics.com/analytics.js';
+r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+-->
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
 <script src="http://d3js.org/d3.v2.js"></script>
 <!-- build:js scripts/particles.js -->
 <script src="scripts/particles.js"></script>
 <!-- endbuild -->
-<!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+<script src="http://prinzhorn.github.io/skrollr/dist/skrollr.min.js"></script>
 </body>
 </html>

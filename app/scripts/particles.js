@@ -81,7 +81,7 @@ window.addEventListener("load", function () {
     }).attr("stroke-width", function (data, index) {
         return data.radius / ((Math.random() * 3) + 2);
     });
-
+    canvas.append("div").attr("id","svg-logo").attr("style","position:absolute").attr("class","centered col-md-5 col-sm-6");
     // 타이머를 생성합니다.
     var particleTags = d3.selectAll("circle");
     var particalImage = d3.selectAll("image");

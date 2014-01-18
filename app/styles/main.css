@@ -28,7 +28,7 @@ body {
     padding: 0.2em 0;
 }
 
-
+#svg-logo {background: url("../images/viral_logo_vertical_A.png") center center no-repeat;}
 
 #door  {background: #EFF url('../images/viral-door-r.jpg') center center no-repeat ; z-index:5;}
 

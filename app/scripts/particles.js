@@ -52,6 +52,9 @@ window.addEventListener("load", function () {
     canvas.style('width', width);
     canvas.style('height', height);
 
+    //enter.append("svg:image").attr('x',10).attr('y',10).attr('width',200).attr('height',300).attr('xlink:href','/images/viral_logo_vertical.PNG').attr('opacity',0.01);
+    //enter.append("svg:image").attr('x',400).attr('y',500).attr('width',300).attr('height',500).attr('xlink:href','/images/viral_logo_vertical.PNG');
+    //logocanvas.append("svg:image").attr('x',(window.innerWidth / 12)*5).attr('y',(window.innerHeight / 12)*3).attr('width',(window.innerWidth/12)*2).attr('height',(window.innerWidth/12)*2/231*401).attr('xlink:href','./images/viral_logo_vertical_A.png').attr('data-300','display:none');
     // 파티클 데이터를 생성합니다.
     particles = [];
     for (var i = 0; i < 100; i++) {
@@ -79,11 +82,6 @@ window.addEventListener("load", function () {
         return data.radius / ((Math.random() * 3) + 2);
     });
 
-    //enter.append("svg:image").attr('x',10).attr('y',10).attr('width',200).attr('height',300).attr('xlink:href','/images/viral_logo_vertical.PNG').attr('opacity',0.01);
-    //enter.append("svg:image").attr('x',400).attr('y',500).attr('width',300).attr('height',500).attr('xlink:href','/images/viral_logo_vertical.PNG');
-    
-    var logocanvas = d3.select("svg");
-    logocanvas.append("svg:image").attr('x',(window.innerWidth / 12)*5).attr('y',(window.innerHeight / 12)*3).attr('width',(window.innerWidth/12)*2).attr('height',(window.innerWidth/12)*2/231*401).attr('xlink:href','./images/viral_logo_vertical_A.png').attr('data-300','display:none');
     // 타이머를 생성합니다.
     var particleTags = d3.selectAll("circle");
     var particalImage = d3.selectAll("image");

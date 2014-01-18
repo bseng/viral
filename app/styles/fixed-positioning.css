@@ -27,8 +27,8 @@ html, body {
 .skrollr-mobile .skrollable {
 	/*
 		May cause issues on Android default browser (see #331 on GitHub).
-	*/
 	position:absolute;
+	*/
 }
 
 .skrollable .skrollable {

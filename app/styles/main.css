@@ -1,3 +1,4 @@
+
 body {
     background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -28,9 +29,45 @@ body {
     padding: 0.2em 0;
 }
 
+.slide-0 {
+  z-index: 1;
+}
+.slide-1 {
+  z-index: 2;
+}
+.slide-2 {
+  z-index: 3;
+}
+.slide-3 {
+  z-index: 4;
+}
+.slide-4 {
+  z-index: 5;
+}
+.slide-5 {
+  z-index: 6;
+}
+.slide-6 {
+  z-index: 7;
+}
+.slide-7 {
+  z-index: 8;
+}
+.slide-8 {
+  z-index: 9;
+}
+.slide-9 {
+  z-index: 10;
+}
+
 #svg-logo {background: url("../images/viral_logo_vertical_B.png") center center no-repeat;}
 
-#door  {background: #EFF url('../images/viral-door-r.jpg') center center no-repeat ; z-index:5;}
+#door  {background: #EFF url('../images/viral-door-r.jpg') center center no-repeat }
 
 .centered { top:0; bottom:0; left:0; right:0; margin:auto; }
 
+.back {
+  top: 0;
+  left: 0;
+  width: 100%;
+}

@@ -61,6 +61,7 @@ a:visited {
 	width:100%; 
 	height:auto; 
 	background-color:#ffffff;
+  opacity: 0.75;
 	z-index:100;
 }
 #logo {
@@ -101,9 +102,12 @@ a:visited {
 	width:100%;
 	height:auto;
 	position: relative;
-	padding:140px 0;
+	padding:2% 0;
 }
 
+#svg-logo {background: url("../images/viral_logo_vertical_B.png") center center no-repeat;}
+
+.centered { top:0; bottom:0; left:0; right:0; margin:auto; }
 
 
 /* Slide 1 */ 
@@ -126,7 +130,27 @@ a:visited {
 	font-weight: 400;
 }
 
-
+/* Slide 2 */ 
+#slide1a{
+	background-color:#66020E;
+	color:#ffffff;
+}
+#slide1a h1 {
+	font-size: 3.8em;
+	letter-spacing: -3px;
+	line-height: 0px;
+	font-weight: 700;
+}
+#slide1a h2 {
+	font-size: 2em;
+	line-height: 0px;
+	padding-bottom:20px;
+	font-weight: 400;
+}
+#slide1a p {
+	font-size: 3.8em;
+	font-weight: 700;
+}
 
 
 /* Slide 2 */ 
@@ -136,10 +160,11 @@ a:visited {
   background-size: cover;
 	background-color:#f68f67;
 	color:#ffffff;
+  height: 567px;
+  width: 100%;
 }
 #slide2 h1 {
 	font-size: 3.8em;
-	letter-spacing: -3px;
 	line-height: 0px;
 	color:#ffffff;
 	font-weight: 700;
@@ -147,7 +172,6 @@ a:visited {
 #slide2 h2 {
 	font-size: 2em;
 	color: #ffffff;
-	line-height: 0px;
 	padding-bottom:20px;
 	font-weight: 400;
 }
@@ -238,7 +262,7 @@ a:visited {
 @media screen and (max-width: 1024px) {
 
 #logo {
-	width: 50%;
+	width: 0;
   margin: auto;
 	text-align: center;
 }
@@ -267,7 +291,7 @@ a:visited {
 	background-attachment: fixed;
 	width:100%;
 	position: relative;
-	padding:150px 0;
+	padding:1% 0;
 }
 
 #decorative {
@@ -324,7 +348,6 @@ a:visited {
 @media screen and (max-width: 480px) {
 
 #logo {
-	width: 25%;
 	text-align: center;
 }
 
@@ -350,7 +373,7 @@ a:visited {
 	background-attachment: fixed;
 	width:100%;
 	position: relative;
-	padding:150px 0;
+	padding:1%;
 }
 
 
@@ -360,10 +383,23 @@ a:visited {
 #slide1 h2 {
 	line-height: 1em;
 }
+#slide1a h1 {
+	line-height: 1em;
+}
+#slide1a h2 {
+	line-height: 1em;
+}
+#slide1a p {
+	line-height: 1em;
+  font-size: 2em;
+}
 #slide2 h1 {
 	line-height: 1em;
 }
 #slide2 h2 {
+	line-height: 1em;
+}
+#slide2 p {
 	line-height: 1em;
 }
 #slide3 h1 {

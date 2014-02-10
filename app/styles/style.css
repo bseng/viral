@@ -167,7 +167,7 @@ a.thumbnail.active {
   /* background-color:#66020E; 
   color:#ffffff; */
   color: rgb(18,68,50);
-  background: url("../images/shrimp-bg.jpg") center center no-repeat;
+  background: url("../images/shrimp-295.jpg") top left repeat;
 }
 #slide1a h1 {
   font-size: 3.8em;
@@ -230,7 +230,7 @@ height: auto;
 
 #slide3{
   background-color:#fbd4d0;
-  background: url("../images/shrimp-bg.jpg") top left repeat;
+  background: url("../images/shrimp-295.jpg") top left repeat;
 }
 #slide3 h1 {
   font-size: 3.8em;

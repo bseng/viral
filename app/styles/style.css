@@ -192,14 +192,14 @@ a.thumbnail.active {
 
 #slide2{
   /*
-  background-image:url('../images/viral-door-r.jpg');
+  background-image:url('../images/viral-door-r .jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  */
+  background: url("../images/Shrimp-295.jpg") top left repeat;
   background-color:#f68f67;
-   */
 color:#ffffff;
-width: 100%;
-height: auto;
+
 }
 #slide2 h1 {
   font-size: 3.8em;
@@ -265,7 +265,7 @@ height: auto;
 }
 #slide4 h1 {
   font-size: 3.8em;
-  letter-spacing: -3px;
+  /* letter-spacing: -3px; */
   line-height: 0px;
   font-weight: 700;
 }
@@ -296,6 +296,12 @@ height: auto;
   font-size: 1.4em;
   font-weight: 200;
 }
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* Tablet */
 @media screen and (max-width: 1024px) {

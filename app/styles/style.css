@@ -261,7 +261,7 @@ color:#ffffff;
 
 #slide4{
  /*  background-color:#66020E; */
-  background-color: #B34F5B;
+  background-color: #D37682;
   color:#ffffff;
 }
 #slide4 h1 {
@@ -295,6 +295,8 @@ color:#ffffff;
 #slide4 label {
   font-size: 1.4em;
   font-weight: 200;
+  margin-top: 0.6em;
+  display: inline-block;
 }
 
 .img-responsive {
@@ -387,11 +389,6 @@ color:#ffffff;
     line-height: 1em;
     font-size: 2.8em;
   }
-  #slide4 h2 label p{
-    line-height: 1em;
-    font-size: 1.8em;
-  }
-
 }
 
 
@@ -478,17 +475,14 @@ color:#ffffff;
     line-height: 1em;
     font-size: 1em;
   }
-  #slide4 label {
-    line-height: 1em;
-    font-size: 1em;
-  }
-
   #slide4 p {
     line-height: 1em;
     font-size: 1em;
   }
 
-
+  #slide4 table tr td a img{
+    width:25%;
+  }
 
 }
 

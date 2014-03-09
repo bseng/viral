@@ -195,10 +195,11 @@ a.thumbnail.active {
   background-image:url('../images/viral-door-r .jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  */
   background: url("../images/Shrimp-295.jpg") top left repeat;
   background-color:#f68f67;
 color:#ffffff;
+  */
+padding: 0;
 
 }
 #slide2 h1 {
@@ -222,6 +223,9 @@ color:#ffffff;
   font-weight: 700;
 }
 
+.green_color{
+   color: rgb(18,68,50);
+}
 
 
 

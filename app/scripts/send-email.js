@@ -16,7 +16,7 @@ $("#contact_form").submit(function(event){
     //all
     //fields
     $('#contact_form').trigger("reset");
-    $('#contact_form > button.btn').val("Sent");
+    $('#contact_form > button.btn').text("Reservation Sent");
   });
 
 });

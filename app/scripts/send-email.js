@@ -7,7 +7,7 @@ $("#contact_form").submit(function(event){
   var email = $(this).find("input[name='email']").val();
   var bookdate = $(this).find("input[name='date']").val();
   var booktime = $(this).find("input[name='time']").val();
-  var message = $(this).find("input[name='message']").val();
+  var message = $(this).find("textarea[name='message']").val();
 
   $.post("./process.php", {name: name, phone: phone, email: email, bookdate: bookdate, booktime: booktime, question: message})
   .done( function(data) {
@@ -16,7 +16,7 @@ $("#contact_form").submit(function(event){
     //all
     //fields
     $('#contact_form').trigger("reset");
-    $('#contact_form > a.btn').val("Sent");
+    $('#contact_form > button.btn').val("Sent");
   });
 
 });

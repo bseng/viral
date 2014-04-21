@@ -9,7 +9,7 @@ $("#contact_form").submit(function(event){
   var booktime = $(this).find("input[name='time']").val();
   var message = $(this).find("input[name='message']").val();
 
-  $.post("scripts/process.php", {name: name, phone: phone, email: email, bookdate: bookdate, booktime: booktime, question: message})
+  $.post("./process.php", {name: name, phone: phone, email: email, bookdate: bookdate, booktime: booktime, question: message})
   .done( function(data) {
 
         //clear

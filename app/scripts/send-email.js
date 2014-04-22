@@ -7,9 +7,10 @@ $("#contact_form").submit(function(event){
   var email = $(this).find("input[name='email']").val();
   var bookdate = $(this).find("input[name='date']").val();
   var booktime = $(this).find("input[name='time']").val();
+  var number = $(this).find("input[name='number']").val();
   var message = $(this).find("textarea[name='message']").val();
 
-  $.post("./process.php", {name: name, phone: phone, email: email, bookdate: bookdate, booktime: booktime, question: message})
+  $.post("./process.php", {name: name, phone: phone, email: email, bookdate: bookdate, booktime: booktime, number: number, question: message})
   .done( function(data) {
 
         //clear

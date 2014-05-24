@@ -9,8 +9,9 @@ $("#contact_form").submit(function(event){
   var booktime = $(this).find("input[name='time']").val();
   var number = $(this).find("input[name='number']").val();
   var message = $(this).find("textarea[name='message']").val();
+  var title = $(this).find("select[name='title]").val();
 
-  $.post("./process.php", {name: name, phone: phone, email: email, bookdate: bookdate, booktime: booktime, number: number, question: message})
+  $.post("./process.php", {name: name, phone: phone, email: email, bookdate: bookdate, booktime: booktime, number: number, question: message, title: title})
   .done( function(data) {
 
         //clear

@@ -7,7 +7,9 @@ $bookdate = stripslashes($bookdate);
 $booktime = stripslashes($booktime);
 $question = stripslashes($question);
 $number = stripslashes($number);
+$title = stripslashes($title);
 $body = "Reservation Details:
+  title: $title
   name: $name
   phone: $phone
   e-mail: $email
@@ -15,6 +17,7 @@ $body = "Reservation Details:
   book date: $bookdate
   book time: $booktime
   question: $question
+  
   ";
 mail('reservation@viral-fusion.com',"Reservation",$body,"From: $name <$email>");
 ?>
